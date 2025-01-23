@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Image Carousel App
 
-## Getting Started
+Dit project is een eenvoudige afbeeldingencarrousel gebouwd met Next.js en React. Het maakt gebruik van Tailwind CSS voor styling en biedt een responsieve gebruikersinterface.
 
-First, run the development server:
+## Bestandsstructuur
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **app/components/caroussel/page.jsx**: Bevat de `ImageCarousel` component die de carrousel functionaliteit implementeert.
+- **app/globals.css**: Bevat globale CSS-stijlen, inclusief kleurenschema's voor lichte en donkere modi.
+- **app/layout.js**: Definieert de hoofdlayout van de applicatie, inclusief lettertypeconfiguraties.
+- **app/page.js**: De hoofdpagina van de applicatie die de `ImageCarousel` component weergeeft.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Functies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Navigatieknoppen**: Gebruikers kunnen door de afbeeldingen bladeren met behulp van de vorige en volgende knoppen.
+- **Indicatoren**: Er zijn indicatoren onder de carrousel die de huidige positie in de reeks afbeeldingen aangeven.
+- **Responsief ontwerp**: De carrousel past zich aan verschillende schermformaten aan.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Installatie
 
-## Learn More
+1. **Kloon de repository**:
+   ```bash
+   git clone https://github.com/Yusuf013/OurTeamCaroussel_POC
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Navigeer naar de projectmap**:
+   ```bash
+   cd <project-directory>
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Installeer de afhankelijkheden**:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Start de ontwikkelserver**:
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open de applicatie in je browser**:
+   Ga naar `http://localhost:3000` om de applicatie te bekijken.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Aanpassingen
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Afbeeldingen**: De afbeeldingen voor de carrousel zijn gedefinieerd in `app/components/caroussel/page.jsx`. Je kunt deze eenvoudig aanpassen door de paden in de `images` array te wijzigen.
+- **Stijlen**: Globale stijlen kunnen worden aangepast in `app/globals.css`.
+
